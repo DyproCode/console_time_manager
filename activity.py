@@ -15,7 +15,6 @@ class Activity():
         self.start_time = start_time
 
         
-   
     def add_time(self,time):
         time = convert_min_to_dec(time)
         self.days[today] = self.days.get(str(date.today()), 0) + time
@@ -206,7 +205,9 @@ class Activity():
     @classmethod
     def create_todolist(activities, cls):
         user_input = input("When should this to do list be completed?(week|day): ").lower()
-
+        
+        if user_input == "day":
+            pass
         
 
 
