@@ -1,8 +1,6 @@
 from util import *
 
 class Activity():    
-    todolist_day = list()
-    todolist_week = list()
 
     def __init__(self, name, type = None, days = None, total_time = 0, goal = None, start_time = None):
         self.name = name
@@ -202,12 +200,8 @@ class Activity():
 
         return Activity.sort_by_time(activities_with_type)
         
-    @classmethod
-    def create_todolist(activities, cls):
-        user_input = input("When should this to do list be completed?(week|day): ").lower()
-        
-        if user_input == "day":
-            pass
+
+
         
 
 
